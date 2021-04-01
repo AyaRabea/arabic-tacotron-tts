@@ -7,6 +7,8 @@ import time
 import traceback
 from text import text_to_sequence
 from util.infolog import log
+import sys
+sys.path.insert(1,'/content/arabic_pronounce/')
 from arabic_pronounce import phonetise
 
 _batches_per_group = 32
