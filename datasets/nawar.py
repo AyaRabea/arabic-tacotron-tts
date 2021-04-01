@@ -28,7 +28,7 @@ def build_from_path(in_dir, out_dir, num_workers=1, tqdm=lambda x: x):
     for line in f:
       parts = line.strip().split(',')
       parts.append(parts[1])
-      wav_path = os.path.join(in_dir, 'wavs', 'ARA NORM  %s.wav' % parts[0])
+      wav_path = os.path.join(in_dir, 'wavs', '%s.wav' % parts[0])
       text = parts[2]
       futures.append(executor.submit(partial(_process_utterance, out_dir, index, wav_path, text)))
       index += 1
