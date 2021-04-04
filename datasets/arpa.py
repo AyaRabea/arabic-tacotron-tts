@@ -1,3 +1,5 @@
+import sys
+sys.path.insert(1,'/content/arabic_pronounce/')
 from arabic_pronounce import phonetise
 import argparse
 
