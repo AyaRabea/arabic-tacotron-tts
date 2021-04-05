@@ -90,7 +90,6 @@ if __name__ == '__main__':
   print(hparams_debug_string())
   synthesizer.load(args.checkpoint)
   print('Serving on port %d' % args.port)
-  #simple_server.make_server('0.0.0.0', args.port, api).serve_forever()
-  api.run(host='0.0.0.0',port=5000)
+  simple_server.make_server('0.0.0.0', args.port, api).serve_forever()
 else:
   synthesizer.load(os.environ['CHECKPOINT'])
