@@ -38,5 +38,7 @@ class Synthesizer:
     wav = audio.inv_preemphasis(wav)
     wav = wav[:audio.find_endpoint(wav)]
     out = io.BytesIO()
-    audio.save_wav(wav, out)
+    #audio.save_wav(wav, out)
+    audio.save_wav(wav, "/content/drive/MyDrive/nader")
+    print("lolololololoy")
     return out.getvalue()
