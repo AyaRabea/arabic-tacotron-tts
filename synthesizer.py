@@ -40,4 +40,5 @@ class Synthesizer:
     out = io.BytesIO()
     #audio.save_wav(wav, out)
     audio.save_wav(wav, "/content/drive/MyDrive/voice_cloning/out_sample")
+    print("finishhhhhhhhhhhhhhh")
     return out.getvalue()
