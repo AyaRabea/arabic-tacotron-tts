@@ -39,6 +39,5 @@ class Synthesizer:
     wav = wav[:audio.find_endpoint(wav)]
     out = io.BytesIO()
     #audio.save_wav(wav, out)
-    audio.save_wav(wav, "/content/drive/MyDrive/nader")
-    print("lolololololoy")
+    audio.save_wav(wav, "/content/drive/MyDrive/voice_cloning/sample")
     return out.getvalue()
